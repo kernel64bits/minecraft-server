@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Flask Tutorial</title>
+</head>
+<body>
+<h1>Working sever</h1>
+<p> {{success}}</p>
+<h1>Not Working sever</h1>
+<p> {{fail}}</p>
+<h1>Status of minecraft.garet.me</h1>
+<p> {{status}}</p>
+<h1>Actions</h1>
+<form action={{ url_for("hello")}} method="post">
+<label for="action">Action:</label>
+<select id="action" name="action">
+  <option value="start">Start</value>
+  <option value="stop">Stop</value>
+  <option value="info">Info</value>
+</select>
+<label for="size">Size:</label>
+<select id="size" name="size">
+  <option value="small">Small</value>
+</select>
+<button type="submit">Submit</button>
+<h1> Message</h1>
+<p> {{message}}</p>
+</body>
+</html>  
